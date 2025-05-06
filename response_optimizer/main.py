@@ -1,6 +1,7 @@
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
+
 from passive_goal_creator.main import Goal, PassiveGoalCreator
 from prompt_optimizer.main import OptimizedGoal, PromptOptimizer
 

@@ -2,6 +2,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
 from pydantic import BaseModel, Field
 
+
 class OptimizedGoal(BaseModel):
     description: str = Field(..., description="目標の説明")
     metrics: str = Field(..., description="目標の達成度を測定する方法")
@@ -39,6 +40,7 @@ class PromptOptimizer:
 
 def main():
     import argparse
+
     from settings import Settings
 
     settings = Settings()

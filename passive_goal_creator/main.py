@@ -1,7 +1,8 @@
+from typing import List
+
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
 from pydantic import BaseModel, Field
-from typing import List
 
 
 class Goal(BaseModel):
